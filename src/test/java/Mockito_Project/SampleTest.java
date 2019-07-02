@@ -22,6 +22,7 @@ public class SampleTest {
 	    List mockList = Mockito.mock(ArrayList.class);
 	     
 	    mockList.add("one");
+	    //mockList.add("Two");
 	    Mockito.verify(mockList).add("one");
 	    assertEquals(0, mockList.size());
 	 
