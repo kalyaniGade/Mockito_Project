@@ -22,16 +22,15 @@ public class mockMethodTest {
 
 		int num1 = 12;
 		int num2 = 12;
-		int expected = 24;
+		int expected = 23;
 
 		when(addService.add(num1, num2)).thenReturn(expected);
 
 		int actual = calcService.calc(num1, num2);
-
+	
 		assertEquals(expected, actual);
 
-	
-}
+    }
 	@Test
 	public void spyTest() {
 		AddService addService;
