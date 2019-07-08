@@ -22,7 +22,7 @@ public class mockMethodTest {
 
 		int num1 = 12;
 		int num2 = 12;
-		int expected = 23;
+		int expected = 24;
 
 		when(addService.add(num1, num2)).thenReturn(expected);
 
@@ -41,7 +41,7 @@ public class mockMethodTest {
 		calcService = new CalcService(addService);
 		int num1 = 12;
 		int num2 = 12;
-		int expected = 23;
+		int expected = 24;
 
 		when(addService.add(num1, num2)).thenReturn(expected);
         System.out.println(expected);
