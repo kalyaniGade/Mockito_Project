@@ -3,7 +3,7 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 import org.mockito.Mock;
-
+import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.junit.Before;
 import org.junit.Test;
@@ -41,6 +41,7 @@ public class mockAnnotTest {
 		assertEquals(expected, actual);
 
 	}
+	
 }
 
 

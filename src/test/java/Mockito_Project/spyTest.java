@@ -6,7 +6,9 @@ import static org.mockito.Mockito.when;
 import java.util.ArrayList;
 import java.util.List;
 
+//import org.junit.Before;
 import org.junit.Test;
+////import org.mockito.MockitoAnnotations;
 
 public class spyTest {
 
@@ -23,6 +25,7 @@ public class spyTest {
 		System.out.println(listSpy.get(0));
 		assertEquals("second-element", listSpy.get(0));
 	}
+	
 
 }
 

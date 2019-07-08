@@ -20,6 +20,12 @@ public class stubTest {
 		System.out.println(mockedList.get(0));
 		assertEquals("first-element", mockedList.get(0));
 		
+		/*
+		 * when(mockedList.get(0)).thenReturn("second-element");
+		 * System.out.println(mockedList.get(0)); assertEquals("second-element",
+		 * mockedList.get(0));
+		 */
+		
 		// "null" gets printed as get(1) is not stubbed
 		System.out.println(mockedList.get(1));
 	}
