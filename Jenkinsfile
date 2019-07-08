@@ -8,12 +8,6 @@ pipeline {
                 sh 'gradle clean build'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-                sh 'gradle clean test'
-            }
-        }
-       
+        
     }
 }
