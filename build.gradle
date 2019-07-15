@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'findbugs'
 }
 
 repositories {
@@ -29,7 +30,17 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:2.7.22'
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    
     // https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito
 //testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.7.4'
     
 }
+findbugs {
+    ignoreFailures =true
+    toolVersion = "3.0.1"
+    sourceSets=[sourceSets.main]
+   // excludeFilter = file("config/findbugs/excludeFilter.xml")
+    reportsDir = file("$project.buildDir/reports/findbugs")
+    effort = "max"
+}
+

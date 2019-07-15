@@ -11,8 +11,9 @@ public class CalcService  {
 
 	public int calc(int num1, int num2) {
 		System.out.println("**--- CalcService calc executed ---**");
-		
-		return addService.add(num1, num2);
+		int val = num1+num2;
+		return val;
+		//return addService.add(num1, num2);
 	}
 
 	

@@ -14,6 +14,12 @@ pipeline {
                 sh 'gradle clean test'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'FindBugs Checking..'
+                sh 'gradle check'
+            }
+        }
        
     }
 }
