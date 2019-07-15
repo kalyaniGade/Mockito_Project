@@ -14,7 +14,7 @@ pipeline {
                 sh 'gradle clean test'
             }
         }
-        stage('Test') {
+        stage('Find Bugs') {
             steps {
                 echo 'FindBugs Checking..'
                 sh 'gradle check'
